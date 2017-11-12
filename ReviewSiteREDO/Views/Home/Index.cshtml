@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    @*<img id="teaser" src="~/Content/tlou2 teaser.jpg" />*@
+    <h1>Find your refuge!</h1>
+    <p class="lead">"When you're lost in the darkness look for the light." -Marlene, Leader of the Fireflys</p>
+
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <h2>Review Available Safe Havens</h2>
+        <p>
+          Given the state of there world there aren't many places to live without being in constant fear of being attacked or infected. We built this site so we could document different areas that are suitable for living, even if only for a little while as you travel.
+        </p>
+        <p><a class="btn btn-default" @Html.ActionLink("See Available Safe Havens", "Index","Reviews")></a></p>
+    </div>
+    <div class="col-md-6">
+        <h2>Unlisted Safe Havens</h2>
+        <p>
+          We know there are more safe places out there. If you find one that isn't listed on this site already you can add it so other people/groups can find it.
+        </p>
+        <p><a class="btn btn-default" @Html.ActionLink("Add a New Safe Haven", "Create", "Categories")></a></p>
+    </div>
+</div>
